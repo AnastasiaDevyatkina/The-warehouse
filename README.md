@@ -76,32 +76,33 @@
 ```SQL
 1.SELECT * FROM Warehouses;
 
-2.SQL SELECT * FROM Boxes WHERE Value > 150;```
+2.SQL SELECT * FROM Boxes WHERE Value > 150;
 
-3.SQL SELECT DISTINCT * FROM Boxes;```
+3.SQL SELECT DISTINCT * FROM Boxes;
 
-4.SQL SELECT AVG(Value) FROM Boxes;```
+4.SQL SELECT AVG(Value) FROM Boxes;
 
-5.SQL SELECT Warehouse, AVG(Value) FROM Boxes GROUP BY Warehouse;```
+5.SQL SELECT Warehouse, AVG(Value) FROM Boxes GROUP BY Warehouse;
 
-6.SQL SELECT Warehouse, AVG(Value) FROM Boxes GROUP BY Warehouse HAVING AVG(Value) > 150;```
+6.SQL SELECT Warehouse, AVG(Value) FROM Boxes GROUP BY Warehouse HAVING AVG(Value) > 150;
 
-7.SQL SELECT Boxes.Code, Location FROM Warehouses INNER JOIN Boxes  ON Warehouses.Code = Boxes.Warehouse;```
+7.SQL SELECT Boxes.Code, Location FROM Warehouses INNER JOIN Boxes  ON Warehouses.Code = Boxes.Warehouse;
 
-8.SQL SELECT Warehouses.Code, COUNT(Boxes.Code) FROM Warehouses LEFT JOIN Boxes ON Warehouses.Code = Boxes.Warehouse GROUP BY Warehouses.Code;```
+8.SQL SELECT Warehouses.Code, COUNT(Boxes.Code) FROM Warehouses LEFT JOIN Boxes ON Warehouses.Code = Boxes.Warehouse GROUP BY Warehouses.Code;
 
-9.SQL SELECT Code FROM Warehouses  WHERE Capacity < ( SELECT COUNT(*)  FROM Boxes  WHERE Warehouse = Warehouses.Code);```
+9.SQL SELECT Code FROM Warehouses  WHERE Capacity < ( SELECT COUNT(*)  FROM Boxes  WHERE Warehouse = Warehouses.Code);
 
-10.SQL SELECT B.Code FROM Warehouses RIGHT OUTER JOIN Boxes B on Warehouses.Code = B.Warehouse WHERE Location = 'Chicago;```
+10.SQL SELECT B.Code FROM Warehouses RIGHT OUTER JOIN Boxes B on Warehouses.Code = B.Warehouse WHERE Location = 'Chicago;
 
-11.SQL INSERT INTO Warehouses (Code, Location, Capacity) VALUES (6, 'New York',3);```
+11.SQL INSERT INTO Warehouses (Code, Location, Capacity) VALUES (6, 'New York',3);
 
-12.SQL INSERT INTO Boxes(Code, Contents, Value, Warehouse) VALUES ('H5RT', 'Papers', 200, 2);```
+12.SQL INSERT INTO Boxes(Code, Contents, Value, Warehouse) VALUES ('H5RT', 'Papers', 200, 2);
 
-13.SQL UPDATE Boxes SET Value = Value * 0.85 WHERE Code = '0MN7';```
+13.SQL UPDATE Boxes SET Value = Value * 0.85 WHERE Code = '0MN7';
 
-14.SQL UPDATE Boxes SET Value = Value * 0.80 WHERE Value > (SELECT AVG(Value) FROM (SELECT * FROM Boxes);```
+14.SQL UPDATE Boxes SET Value = Value * 0.80 WHERE Value > (SELECT AVG(Value) FROM (SELECT * FROM Boxes);
 
-15.SQL DELETE FROM Boxes WHERE Value < 100;```
+15.SQL DELETE FROM Boxes WHERE Value < 100;
 
-16.SQL DELETE FROM Warehouses;``` 
+16.SQL DELETE FROM Warehouses;
+```
