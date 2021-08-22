@@ -38,9 +38,9 @@
 
 ## Answers
 
-1. ```SQL SELECT * FROM Warehouses;```
+1.```SQL SELECT * FROM Warehouses;```
 
-2. ```SQL SELECT * FROM Boxes WHERE Value > 150;-```
+2.```SQL SELECT * FROM Boxes WHERE Value > 150;-```
 
 3.```SQL SELECT DISTINCT * FROM Boxes;```
 
