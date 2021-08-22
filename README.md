@@ -4,7 +4,8 @@
 ![img](https://upload.wikimedia.org/wikipedia/commons/4/47/Sql_warehouse.png)
 
 ## *Table creation code*
-```SQL CREATE TABLE Warehouses (
+```SQL 
+   CREATE TABLE Warehouses (
    Code INTEGER PRIMARY KEY NOT NULL,
    Location TEXT NOT NULL ,
    Capacity INTEGER NOT NULL 
