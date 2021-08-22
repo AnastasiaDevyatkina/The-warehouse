@@ -76,7 +76,7 @@
 
 1.```SQL SELECT * FROM Warehouses;```
 
-2.```SQL SELECT * FROM Boxes WHERE Value > 150;-```
+2.```SQL SELECT * FROM Boxes WHERE Value > 150;```
 
 3.```SQL SELECT DISTINCT * FROM Boxes;```
 
@@ -92,7 +92,7 @@
 
 9.```SQL SELECT Code FROM Warehouses  WHERE Capacity < ( SELECT COUNT(*)  FROM Boxes  WHERE Warehouse = Warehouses.Code);```
 
-10.```SQL SELECT B.Code FROM Warehouses RIGHT OUTER JOIN Boxes B on Warehouses.Code = B.Warehouse WHERE Location = 'Chicago;';```
+10.```SQL SELECT B.Code FROM Warehouses RIGHT OUTER JOIN Boxes B on Warehouses.Code = B.Warehouse WHERE Location = 'Chicago;```
 
 11.```SQL INSERT INTO Warehouses (Code, Location, Capacity) VALUES (6, 'New York',3);```
 
